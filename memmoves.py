@@ -17,7 +17,7 @@ def memmoves(mu, data, block):
         memory_helpers.write_utf8(
             mu,
             data,
-            b"\xHOOKED"
+            b"HOOKED\x00"
         )
     else:
         mu.mem_write(
